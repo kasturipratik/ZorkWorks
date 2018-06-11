@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class DiningRoom extends Room{
+
     HashMap<Character, Integer> direction = new HashMap<>();
     ArrayList<String> contents = new ArrayList<>();
     int roomNum;
@@ -38,11 +39,13 @@ public class DiningRoom extends Room{
         String display = "You are standing in the dinning room\n You see "+contents.get(x);
         return display;
     }
+
     @Override
     public String displayExitMessage() {
         String exitMessage = "{You can (1)exit to the south or press Q to quit}";
         return exitMessage;
     }
+
 
     @Override
     public Character changeStringToChar(String s) {

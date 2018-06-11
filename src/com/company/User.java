@@ -25,8 +25,11 @@ class User {
 
     // instance methods:
     public Room move ( Room currentRoom, char direction){
+
         HashMap<Character, Integer> directions = currentRoom.getExit();
+
         int roomNumber = directions.get(direction);
+
         return roomLookUp.get(roomNumber);
     }
 }

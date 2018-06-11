@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Foyer extends Room {
+
     HashMap<Character, Integer> direction = new HashMap<>();
     ArrayList<String> contents = new ArrayList<>();
     int roomNumber;
@@ -27,12 +28,15 @@ public class Foyer extends Room {
         return direction;
     }
 
+
+
     @Override
     public String displayContent() {
         String display = "You are standing in the foyer of an old house.\nYou see "+contents.get(0);
         return display;
 
     }
+
     @Override
     public String displayExitMessage() {
         String exitMessage = "{You can (1)exit to the north or press Q to quit}";

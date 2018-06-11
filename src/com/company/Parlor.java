@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class Parlor extends Room{
+
     HashMap<Character, Integer> direction = new HashMap<>();
     ArrayList<String> contents = new ArrayList<>();
 
@@ -37,11 +38,13 @@ public class Parlor extends Room{
         String display = "You are standing in the parlor.\nYou see "+contents.get(0);;
         return display;
     }
+
     @Override
     public String displayExitMessage() {
         String exitMessage = "{You can (1)exit to the west,(2) exit to the south or press Q to quit}";
         return exitMessage;
     }
+
 
     @Override
     public Character changeStringToChar(String s) {

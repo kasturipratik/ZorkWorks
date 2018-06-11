@@ -10,6 +10,8 @@ abstract class Room {
     public abstract HashMap getExit();
     // instance methods:
     public abstract String displayContent ();
+
     public abstract String displayExitMessage();
+
     public abstract Character changeStringToChar(String s);
 }
